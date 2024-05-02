@@ -1,0 +1,152 @@
+/* FONTS */
+
+/* VARIABLES */
+
+/* 
+colors :
+
+fb : #73E2CC
+linkedin: #1CC3A0
+twitter: #06A3A4
+tumblr : #1579AB
+youtube: #1C606A
+
+je suis passioné : #FAD215
+actualités étiquettes : #CACACA
+
+Lee jeffrey section background : #F0F0F0
+Docs & newsletter background : #E2E2E2
+footer background : #343635
+
+*/
+
+:root {
+    --ex-blue-green: #19C5A3;
+    --ex-blue: #58B6D0;
+    
+    --main-sections-width: 1100px;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    height: 110px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > div {
+    width: var(--main-sections-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__infos {
+    text-align: center;
+}
+
+.header__logo {
+    height: 50px;
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+}
+
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.header__contact > img {
+    height: 25px;
+}
+
+.header__socials {
+    display: flex;
+    gap: 7px;
+}
+
+.header__social-link {
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+}
+
+.header__social-link:hover {
+    opacity: 60%;
+}
+
+.header__social--facebook {
+    background-color: #73E2CC;
+}
+
+.header__social--linkedin {
+    background-color: #1CC3A0;
+}
+
+.header__social--twitter {
+    background-color: #06A3A4;
+}
+
+.header__social--tumblr {
+    background-color: #1579AB;
+}
+
+.header__social--youtube {
+    background-color: #1C606A;
+}
+
+.header__social__img {
+    width: 100%;
+}
+
+.header__nav__container {
+    position: absolute;
+    bottom: -60px;
+    min-height: 60px;
+    z-index: 1;
+    width:100%;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: white;
+}
+
+.header__nav {
+    width: var(--main-sections-width);
+    margin: 0 auto;
+}
+
+
+/* MAIN */
+
+.hero {
+    position: relative;
+    height: 700px;
+    background-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5em;
+}
+
+.hero__title {
+    color: white;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero__title > span {
+    font-size: 0.8em;
+}
