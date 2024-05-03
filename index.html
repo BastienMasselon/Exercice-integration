@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="photographie">
-    <title>Company Name</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="photographie">
+        <title>Company Name</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-<body>
-    <header>
-        <div>
-            <a class="header__infos" href="#">
-                <img class="header__logo"src="assets/images/company-logo.png"/>
-                <h2><strong>COMPANY NAME</strong></h2>
-            </a>
-            <aside class="header__links">
-                <a class="header__contact" href="#">
-                    <img src="assets/images/contact.svg" />
-                    <p>contactez nous</p>
+    <body>
+
+        <header>
+            <div>
+                <a class="header__infos" href="#">
+                    <img class="header__logo"src="assets/images/company-logo.png"/>
+                    <h2><strong>COMPANY NAME</strong></h2>
                 </a>
-                <nav class="header__socials">
-                    <a class="header__social-link header__social--facebook" href="#">
-                        <img class="header__social__img" src="assets/images/socials/icons-facebook.svg" alt="facebook">
+                <aside class="header__links">
+                    <a class="header__contact" href="#">
+                        <img src="assets/images/contact.svg" />
+                        <p>contactez nous</p>
                     </a>
-                    <a class="header__social-link header__social--linkedin" href="#">
-                        <img class="header__social__img" src="assets/images/socials/icons-linkedin.svg" alt="linkedin">
-                    </a>
-                    <a class="header__social-link header__social--twitter" href="#">
-                        <img class="header__social__img" src="assets/images/socials/icons-twitter.svg" alt="twitter">
-                    </a>
-                    <a class="header__social-link header__social--tumblr" href="#">
-                        <img class="header__social__img" src="assets/images/socials/icons-tumblr.svg" alt="tumblr">
-                    </a>
-                    <a class="header__social-link header__social--youtube" href="#">
-                        <img class="header__social__img" src="assets/images/socials/icons-youtube.svg" alt="youtube">
-                    </a>
-                </nav>
-            </aside>
-        </div>
-        <div class="header__nav__container">
-            <nav class="header__nav">
-                <a class="header__nav__link" href="#">nous découvrir</a>
-                <a class="header__nav__link" href="#">boîte à outils</a>
-                <a class="header__nav__link" href="#">projets indépendants, entreprises & mentors</a>
-                <a class="header__nav__link" href="#">actualités</a>
-                <form class="header__search-form" action="" method="get" name="headerSearch">
-                    <input type="search">
-                    <button type="button">
-                        <img src="assets/images/search-icon.svg" alt="search">
-                    </button>
-                </form>
-            </nav>
-        </div>
-    </header>
-
-    <main></main>
-        <section class="hero">
-            <h1 class="hero__title">Le premier site <br> <span>des photographes indépendants</span></h1>
-        </section>
-
-        <section>
-            <div class="section__shell">
-                <div class="section__header">
-                    <h2 class="section__title">à la une</h2>
-                    <hr />
-                </div>
-                
+                    <nav class="header__socials">
+                        <a class="header__social-link header__social--facebook" href="#">
+                            <img class="header__social__img" src="assets/images/socials/icons-facebook.svg" alt="facebook">
+                        </a>
+                        <a class="header__social-link header__social--linkedin" href="#">
+                            <img class="header__social__img" src="assets/images/socials/icons-linkedin.svg" alt="linkedin">
+                        </a>
+                        <a class="header__social-link header__social--twitter" href="#">
+                            <img class="header__social__img" src="assets/images/socials/icons-twitter.svg" alt="twitter">
+                        </a>
+                        <a class="header__social-link header__social--tumblr" href="#">
+                            <img class="header__social__img" src="assets/images/socials/icons-tumblr.svg" alt="tumblr">
+                        </a>
+                        <a class="header__social-link header__social--youtube" href="#">
+                            <img class="header__social__img" src="assets/images/socials/icons-youtube.svg" alt="youtube">
+                        </a>
+                    </nav>
+                </aside>
             </div>
-        </section>
-    <footer></footer>
-</body>
+            <div class="header__nav__container">
+                <nav class="header__nav">
+                    <a class="header__nav__link" href="#">nous découvrir</a>
+                    <a class="header__nav__link" href="#">boîte à outils</a>
+                    <a class="header__nav__link" href="#">projets indépendants, entreprises & mentors</a>
+                    <a class="header__nav__link" href="#">actualités</a>
+                    <form class="header__search-form" action="" method="get" name="headerSearch">
+                        <input type="search">
+                        <button type="button">
+                            <img src="assets/images/search-icon.svg" alt="search">
+                        </button>
+                    </form>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero">
+                <h1 class="hero__title">Le premier site <br> <span>des photographes indépendants</span></h1>
+            </section>
+            
+            <section>
+                <div class="section__shell">
+                    <div class="section__header">
+                        <h2 class="heading section__title">à la une</h2>
+                        <hr />
+                    </div>
+                    <div class="featured">
+                        <div class="featured__img-container">
+                            <img class="featured__img" src="assets/images/pictures/expo-lyon.png" alt="exposition à Lyon">
+                            <div class="featured__meta">
+                                <p class="heading featured__meta__date">
+                                    <time datetime="2018-07-22">22 juillet 2016</time>
+                                </p>
+                                <p class="featured__meta__title">expo photo lyon</p>
+                            </div>
+                        </div>
+                        <div class="featured__content">
+                            <p><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim aut sequi alias, consequuntur natus ratione sunt rem voluptatum ducimus, minima sed ipsum in accusamus nihil soluta. </strong></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum recusandae! Distinctio, ullam vel! Repellendus in expedita necessitatibus unde, facilis sed cupiditate ducimus itaque saepe quidem quod atque eos facere, omnis cumque veniam laboriosam id consequatur, odit incidunt? Dicta accusantium eveniet, at magnam dignissimos qui, expedita cupiditate magni nulla esse voluptatum accusamus possimus ipsum rerum autem, doloribus temporibus optio labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, eos?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                
+            </section>
+
+        </main>
+
+        <footer>
+        </footer>
+    </body>
 </html>
