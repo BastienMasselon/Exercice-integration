@@ -27,12 +27,41 @@ footer background : #343635
     --main-sections-width: 1100px;
 }
 
-/* HEADER */
+/* === GENERAL  === */
+
+.section__shell {
+    width: var(--main-sections-width);
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.section__title {
+    position: relative;
+    background-color: var(--ex-blue-green);
+    color: white;
+    min-width: fit-content;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.section__header {
+    display: flex;
+    align-items: center;
+}
+
+.section__header > hr {
+    height: 1px;
+    width: 100%;
+    margin-left: 40px;
+    background-color: var(--ex-blue-green);
+}
+
+/* === HEADER === */
 
 header {
     position: relative;
     height: 110px;
-    border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,8 +141,8 @@ header > div {
 
 .header__nav__container {
     position: absolute;
-    bottom: -60px;
-    min-height: 60px;
+    bottom: -70px;
+    min-height: 70px;
     z-index: 1;
     width:100%;
     background-color: rgb(255, 255, 255, 0.5);
@@ -121,24 +150,83 @@ header > div {
 }
 
 .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: var(--main-sections-width);
     margin: 0 auto;
 }
 
+.header__nav__link {
+    position: relative;
+    max-width: 250px;
+    text-transform: uppercase;
+}
 
-/* MAIN */
+.header__nav__link:before {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 20px;
+    background-color: var(--ex-blue-green);
+}
+
+.header__nav__link:hover {
+    color: var(--ex-blue-green);
+}
+
+.header__nav__link:hover:before {
+    display: block;
+}
+
+.header__search-form {
+    display: flex;
+    height: 50px;
+    margin: 5px;
+}
+
+.header__search-form > input {
+    height: 100%;
+    border-radius: 6px 0 0 6px;
+    border: none;
+}
+
+.header__search-form > button {
+    width: 50px;
+    border-radius: 0 6px 6px 0;
+    border: none;
+    background-color: white;
+}
+
+.header__search-form > button:hover {
+    cursor: pointer;
+}
+
+.header__search-form > button > img {
+    width: 30px;
+}
+
+/* === MAIN === */
+
+/* HERO */
 
 .hero {
     position: relative;
     height: 700px;
-    background-color: black;
     text-align: center;
-    text-transform: uppercase;
     font-size: 5em;
+    background-image: url(/assets/images/hero-1280x848.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero__title {
     color: white;
+    text-transform: uppercase;
     margin: 0;
     width: 100%;
     position: absolute;
@@ -150,3 +238,9 @@ header > div {
 .hero__title > span {
     font-size: 0.8em;
 }
+
+/* A LA UNE */
+
+
+
+/* === FOOTER === */
