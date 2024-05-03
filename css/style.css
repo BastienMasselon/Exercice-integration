@@ -43,7 +43,7 @@ body {
     min-width: fit-content;
     text-transform: uppercase;
     padding: 0.8em 1em;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .section__title {
@@ -152,7 +152,7 @@ header > div {
     min-height: 70px;
     z-index: 1;
     width:100%;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255, 0.6);
     color: white;
 }
 
@@ -235,6 +235,7 @@ header > div {
 .hero__title {
     color: white;
     text-transform: uppercase;
+    font-weight: 500;
     margin: 0;
     width: 100%;
     position: absolute;
@@ -301,6 +302,60 @@ header > div {
 .featured__content p:first-child {
     font-weight: bold;
     margin-bottom: 40px;
+}
+
+/* BANNER */
+
+.banner-section {
+    margin: 100px 0;
+    background-color: black;
+}
+
+.banner {
+    position: relative;
+    padding: 0;
+    height: 350px;
+    background-image: url(../assets/images/banner-2048x1292.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.banner:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0) 1%, rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 99%);
+}
+
+.banner__text {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: bold;
+    border: 2px solid #FAD215;
+}
+
+.banner__text > p {
+    padding: 0.1em 0.2em;
+}
+
+.banner__text > p:nth-child(1) {
+    background-color: #FAD215;
+}
+
+.banner__text > p:nth-child(2) {
+    color: white;
+    font-weight: 300;
 }
 
 /* === FOOTER === */
