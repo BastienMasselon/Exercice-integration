@@ -41,6 +41,7 @@ body {
 
 .heading {
     min-width: fit-content;
+    max-width: fit-content;
     text-transform: uppercase;
     padding: 0.8em 1em;
     font-weight: 500;
@@ -499,4 +500,111 @@ header > div {
 .showcase__img__infos p {
     font-weight: 300;
 }
+
 /* === FOOTER === */
+
+/* MISCELLANEOUS SECTION */
+
+.misc-section {
+    background-color: #E2E2E2;
+    padding: 40px 0;
+}
+
+.misc__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.misc__documentation {
+    max-width: 65%;
+}
+
+.misc__container h3 {
+    color: white;
+    background-color: var(--ex-blue);
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.misc__documents {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.misc__document {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.misc__document__icons {
+    position: relative;
+    width: fit-content;
+}
+
+.misc__document__icons > img:nth-child(1) {
+    height: 50px;
+}
+
+.misc__document__icons > img:nth-child(2) {
+    --size: 15px;
+    --padding : 5px;
+    position: absolute;
+    bottom: calc(((var(--size)*0.6) + var(--padding)) / -2);
+    right: calc((var(--size) + var(--padding)) / -2);
+    height: var(--size);
+    width: var(--size);
+    padding: var(--padding);
+    border-radius: 100%;
+    background-color: #E2E2E2;
+    box-shadow: -1px 0 1px 1px var(--ex-blue-green);
+}
+
+.misc__newsletter {
+    width: 30%;
+}
+
+.newsletter__field {
+    border: none;
+    height: 30px;
+    text-transform: uppercase;
+    font-size: 1.03em;
+    padding: 1.5em 1em;
+    box-sizing: border-box;
+}
+
+.newsletter__email {
+    width: 100%;
+}
+
+.newsletter__form > div {
+    margin-top: 10px;
+    max-width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter__form > div > input  {
+    max-width: calc(50% - 5px);
+}
+
+.newsletter__submit {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.03em;
+    padding: 0.9em 1em;
+    color: var(--ex-blue-green);
+    width: 100%;
+    border: 2px solid var(--ex-blue-green);
+}
+
+.newsletter__submit:hover {
+    background-color: var(--ex-blue-green);
+    color: white;
+    cursor: pointer;
+}

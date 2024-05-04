@@ -15,7 +15,7 @@
             <div>
                 <a class="header__infos" href="#">
                     <img class="header__logo"src="assets/images/company-logo.png"/>
-                    <h2><strong>COMPANY NAME</strong></h2>
+                    <h2>COMPANY NAME</h2>
                 </a>
                 <aside class="header__links">
                     <a class="header__contact" href="#">
@@ -50,7 +50,7 @@
                     <form class="header__search-form" action="" method="get" name="headerSearch">
                         <input type="search">
                         <button type="button">
-                            <img src="assets/images/search-icon.svg" alt="search">
+                            <img src="assets/images/icons/search-icon.svg" alt="search">
                         </button>
                     </form>
                 </nav>
@@ -237,9 +237,44 @@
                     </div>
                 </div>
             </section>
+
         </main>
 
         <footer>
+            <section class="misc-section">
+                <div class="misc__container section__shell">
+                    <section class="misc__documentation">
+                        <h3 class="heading">documentation</h3>
+                        <div class="misc__documents">
+                            <a class="misc__document" href="#" download>
+                                <div class="misc__document__icons">
+                                    <img src="assets/images/icons/document-icon.svg" alt="télécharger">
+                                    <img src="assets/images/icons/arrow-icon.svg" alt="télécharger">
+                                </div>
+                                <p>téléchargez le dossier de candidature au statut national étudiant entrepreneur</p>
+                            </a>
+                            <a class="misc__document" href="#" download>
+                                <div class="misc__document__icons">
+                                    <img src="assets/images/icons/document-icon.svg" alt="télécharger">
+                                    <img src="assets/images/icons/arrow-icon.svg" alt="télécharger">
+                                </div>
+                                <p>téléchargez le dossier de candidature au prix pépite 2016</p>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="misc__newsletter">
+                        <h3 class="heading">newsletter</h3>
+                        <form class="newsletter__form" action="" method="get">
+                            <input class="newsletter__field newsletter__email"type="email" name="email" placeholder="email" required>
+                            <div>
+                                <input class="newsletter__field newsletter__lastname"type="text" name="lastName" placeholder="nom" required>
+                                <input class="newsletter__field newsletter__name"type="text" name="name" placeholder="prenom" required>
+                            </div>
+                            <button class="newsletter__submit"type="submit">s'inscrire</button>
+                        </form>
+                    </section>
+                </div>
+            </section>
         </footer>
     </body>
 </html>
