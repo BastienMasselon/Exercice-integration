@@ -505,7 +505,7 @@ header > div {
 
 /* MISCELLANEOUS SECTION */
 
-.misc-section {
+.footer__misc-section {
     background-color: #E2E2E2;
     padding: 40px 0;
 }
@@ -539,6 +539,10 @@ header > div {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.1em;
+}
+
+.misc__document:hover {
+    text-decoration:underline;
 }
 
 .misc__document__icons {
@@ -594,6 +598,7 @@ header > div {
 
 .newsletter__submit {
     margin-top: 30px;
+    background-color: transparent;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.03em;
@@ -607,4 +612,40 @@ header > div {
     background-color: var(--ex-blue-green);
     color: white;
     cursor: pointer;
+}
+
+/* FOOTER SOCIALS */
+
+.footer__socials-section {
+    background-color: var(--ex-blue);
+    height: 100px;
+}
+
+.footer__socials {
+    display: flex;
+    padding: 0;
+    height: 100%;
+}
+
+.footer__social {
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.9em;
+    gap: 20px;
+}
+
+.footer__social:hover {
+    background-color:#389BB0;
+}
+
+.footer__social > img {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 15%;
 }
