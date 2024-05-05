@@ -1,10 +1,16 @@
 /* FONTS */
 
+@font-face {
+    font-family: Bungee;
+    src: url(/assets/fonts/BungeeInline-Regular.ttf);
+}
+
 /* VARIABLES */
 
 :root {
     --ex-blue-green: #19C5A3;
     --ex-blue: #58B6D0;
+    --main-font-color: rgb(94, 94, 94);
     
     --main-sections-width: 1100px;
 }
@@ -13,10 +19,12 @@
 
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--main-font-color);
 }
 
 .section__shell {
-    width: var(--main-sections-width);
+    max-width: var(--main-sections-width);
+    min-width: 500px;
     margin: 0 auto;
     padding: 2rem 0;
 }
@@ -65,16 +73,17 @@ header {
     align-items: center;
 }
 
-header > div {
-    width: var(--main-sections-width);
-    margin: 0 auto;
+header > section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .header__infos {
     text-align: center;
+    color: black;
+    font-family: 'Bungee', 'Segoe UI', Tahoma;
 }
 
 .header__logo {
@@ -91,6 +100,10 @@ header > div {
     align-items: center;
     gap: 10px;
     margin-right: 30px;
+}
+
+.header__contact:hover {
+    text-decoration: underline;
 }
 
 .header__contact > img {
@@ -150,13 +163,13 @@ header > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: var(--main-sections-width);
-    margin: 0 auto;
+    width: 100%;
+    padding: 0;
 }
 
 .header__nav__link {
     position: relative;
-    max-width: 250px;
+    max-width: 20%;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -215,6 +228,7 @@ header > div {
 .hero {
     position: relative;
     height: 700px;
+    width: 100%;
     text-align: center;
     font-size: 5em;
     background-image: url(/assets/images/hero-1280x848.jpg);
@@ -327,6 +341,7 @@ header > div {
     font-size: 4em;
     font-weight: bold;
     border: 2px solid #FAD215;
+    color: black;
 }
 
 .banner__text > p {
