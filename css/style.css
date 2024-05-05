@@ -2,24 +2,6 @@
 
 /* VARIABLES */
 
-/* 
-colors :
-
-fb : #73E2CC
-linkedin: #1CC3A0
-twitter: #06A3A4
-tumblr : #1579AB
-youtube: #1C606A
-
-je suis passioné : #FAD215
-actualités étiquettes : #CACACA
-
-Lee jeffrey section background : #F0F0F0
-Docs & newsletter background : #E2E2E2
-footer background : #343635
-
-*/
-
 :root {
     --ex-blue-green: #19C5A3;
     --ex-blue: #58B6D0;
@@ -507,7 +489,7 @@ header > div {
 
 .footer__misc-section {
     background-color: #E2E2E2;
-    padding: 40px 0;
+    padding: 15px 0;
 }
 
 .misc__container {
@@ -648,4 +630,79 @@ header > div {
     padding: 5px;
     border: 2px solid white;
     border-radius: 15%;
+}
+
+/* FOOTER INFOS */
+
+.footer__infos-section {
+    background-color: #343635;
+    color: white;
+    padding: 20px 0 50px;
+}
+
+.footer__infos-section > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__infos__segment {
+    width: 20%;
+}
+
+.footer__infos__title {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.footer__infos__segment:first-of-type .footer__infos__title {
+    text-transform: none;
+    font-size: 1.3em;
+}
+
+.footer__segment__content {
+    margin-top: 30px;
+}
+
+.footer__donation-link {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    padding: 0.5em 0;
+    font-size: 1.3em;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.footer__donation-link:hover {
+    border: 2px solid var(--ex-blue-green);
+    color: var(--ex-blue-green);
+}
+
+.footer__infos__segment hr {
+    border: none;
+    float: left;
+    background-color: white;
+    height: 2px;
+    width: 30px;
+}
+
+.footer__infos__holder-image {
+    width: 90%;
+}
+
+.footer__rubrics > * {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 1.2em;
+}
+
+.footer__rubrics > *:hover {
+    color: var(--ex-blue-green);
+}
+
+.footer__youtube-embed {
+    width: 90%;
+    height: 100px;
 }
